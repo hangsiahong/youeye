@@ -7,6 +7,24 @@
   No frameworks. No libraries. Just taste.
 </p>
 
+## Install (copy & paste)
+
+```bash
+# pi / Codex / any agent with ~/.agents/skills
+mkdir -p ~/.agents/skills/youeye && \
+curl -sL https://github.com/hangsiahong/youeye/tarball/main | \
+tar xz --strip-components=1 -C ~/.agents/skills/youeye
+```
+
+```bash
+# Claude Code
+mkdir -p ~/.claude/skills/youeye && \
+curl -sL https://github.com/hangsiahong/youeye/tarball/main | \
+tar xz --strip-components=1 -C ~/.claude/skills/youeye
+```
+
+That's it. The skill activates automatically when building any UI.
+
 ---
 
 **youeye** is a skill for coding agents that teaches design principles — not tool wrappers. It ships with anti-slop rules, curated style presets, and production-ready HTML templates that work everywhere.
@@ -84,20 +102,6 @@ Open the page. Squint your eyes so everything is blurry.
 - Does everything blur into one gray mass? → No contrast, start over ✗
 - Is there one element that draws your eye immediately? → Good focal point ✓
 - Does it look like a template? → No personality, inject opinion ✗
-
-## Using with AI agents
-
-Add the skill to your agent's skill directory:
-
-```bash
-# For pi/Claude Code agents
-cp -r youeye/ ~/.agents/skills/
-
-# For Claude Code
-cp -r youeye/ ~/.claude/skills/
-```
-
-The skill automatically activates when building any UI.
 
 ## Philosophy
 
