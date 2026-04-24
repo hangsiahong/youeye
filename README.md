@@ -35,6 +35,7 @@ youeye gives agents a **design eye** — an anti-slop checklist that kills gener
 youeye/
 ├── SKILL.md                  ← The brain: principles, anti-slop checklist, workflow
 ├── seeds.md                  ← 50 creative prompts for random builds
+├── fonts.md                  ← 20 curated font pairings from Google Fonts
 ├── styles/
 │   └── gold-standard.md      ← Color palette, typography, spacing, components
 ├── templates/

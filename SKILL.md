@@ -79,12 +79,22 @@ Body:    16-18px, font-weight 400, line-height 1.6-1.8
 Caption: 12-14px, font-weight 500, letter-spacing 0.05em, uppercase
 ```
 
-**Font pairings that work** (pick ONE, not both):
-- **Sharp**: `Inter` (headings) + `Inter` (body, lighter weight) — versatile
-- **Editorial**: `Playfair Display` (headings) + `Inter` (body) — premium
-- **Technical**: `JetBrains Mono` (headings) + `Inter` (body) — developer
-- **Warm**: `DM Serif Display` (headings) + `DM Sans` (body) — friendly
-- **Bold**: `Space Grotesk` (headings) + `Inter` (body) — modern
+**Read `fonts.md`** for the full vault of 20 curated pairings (all Google Fonts, all free).
+
+Quick picks:
+- **Editorial**: `Playfair Display` + `Source Sans 3` — premium
+- **Startup**: `Space Grotesk` + `DM Sans` — modern SaaS
+- **Brutalist**: `Space Mono` + `Inter` — dev tools
+- **Cinematic**: `Bebas Neue` + `Libre Franklin` — bold entertainment
+- **Soft Future**: `Outfit` + `Inter` — AI/tech
+- **Earthy**: `Fraunces` + `Plus Jakarta Sans` — organic
+- **Neon**: `Orbitron` + `Inter` — gaming/cyberpunk
+- **Luxury**: `Cormorant Garamond` + `Nunito Sans` — fashion
+
+**Anti-rules:**
+- NEVER use Inter for both heading AND body
+- NEVER use more than 2 fonts on one page
+- Heading weight must be 700+. Body stays 400-500.
 
 ### Color (Not the Tailwind defaults)
 
@@ -158,11 +168,12 @@ When the user says nothing specific — "surprise me", "build something cool", "
 
 1. Read `seeds.md` — pick a random seed from the vault
 2. **Amplify it** — invent a brand name, tagline, 3 features, target audience
-3. Pick a style preset (or use gold-standard)
-4. Build the full page with real copy, real personality
-5. Run the anti-slop checklist before shipping
+3. Read `fonts.md` — pick a font pairing that matches the seed's personality. Never reuse the same pairing.
+4. Pick a color palette that matches the mood (from the palette formulas or invent one)
+5. Build the full page with real copy, real personality, the chosen fonts, the chosen palette
+6. Run the anti-slop checklist before shipping
 
-Every build must be unique. Never reuse the same seed twice in a session.
+**Every build must be unique:** different seed + different fonts + different palette. Never repeat a combination.
 
 ## Workflow
 
