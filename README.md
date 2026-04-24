@@ -7,33 +7,27 @@
   No frameworks. No libraries. Just taste.
 </p>
 
-## Install (copy & paste)
+---
 
-```bash
-# pi / Codex / any agent with ~/.agents/skills
-mkdir -p ~/.agents/skills/youeye && \
-curl -sL https://github.com/hangsiahong/youeye/tarball/main | \
-tar xz --strip-components=1 -C ~/.agents/skills/youeye
+## Install
+
+Copy the prompt below and paste it into your AI agent:
+
+```
+Clone https://github.com/hangsiahong/youeye and install it as a skill.
+Put it in my skills directory (use ~/.agents/skills/youeye or ~/.claude/skills/youeye whichever exists).
+Verify the skill is installed by reading the SKILL.md.
 ```
 
-```bash
-# Claude Code
-mkdir -p ~/.claude/skills/youeye && \
-curl -sL https://github.com/hangsiahong/youeye/tarball/main | \
-tar xz --strip-components=1 -C ~/.claude/skills/youeye
-```
-
-That's it. The skill activates automatically when building any UI.
+That's it. Next time you ask the agent to build any UI, youeye activates.
 
 ---
 
-**youeye** is a skill for coding agents that teaches design principles — not tool wrappers. It ships with anti-slop rules, curated style presets, and production-ready HTML templates that work everywhere.
+## What is this?
 
-## Why?
+AI-generated UI has a smell. Generic blue, uniform padding, centered everything, identical card grids. You know it when you see it.
 
-AI-generated UI has a smell. Generic blue, uniform padding, centered everything, card grids with identical cards. You know it when you see it.
-
-youeye gives agents the **design eye** — a checklist that kills slop patterns and principles that make interfaces feel alive.
+youeye gives agents a **design eye** — an anti-slop checklist that kills generic patterns, and principles that make interfaces feel alive and intentional.
 
 ## What's inside
 
@@ -49,14 +43,16 @@ youeye/
 
 ## Quick start
 
-Open `templates/gold-standard.html` in a browser. That's it. No `npm install`. No build step.
+Open `templates/gold-standard.html` in a browser. No `npm install`. No build step.
 
 ```bash
-# Just open it
 open templates/gold-standard.html
+```
 
-# Or serve it locally
-npx serve .
+Or tell your agent:
+
+```
+Use the youeye skill to build me a landing page for my SaaS product
 ```
 
 ## The Anti-Slop Checklist
