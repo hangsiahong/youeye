@@ -34,6 +34,7 @@ youeye gives agents a **design eye** — an anti-slop checklist that kills gener
 ```
 youeye/
 ├── SKILL.md                  ← The brain: principles, anti-slop checklist, workflow
+├── seeds.md                  ← 50 creative prompts for random builds
 ├── styles/
 │   └── gold-standard.md      ← Color palette, typography, spacing, components
 ├── templates/
@@ -54,6 +55,8 @@ Or tell your agent:
 ```
 Use the youeye skill to build me a landing page for my SaaS product
 ```
+
+Or just say **"surprise me"** — youeye picks a random creative concept and builds it fresh every time.
 
 ## The Anti-Slop Checklist
 

@@ -118,18 +118,32 @@ Rules:
 /* ONE signature animation per page — not more */
 ```
 
+## Surprise Me Mode
+
+When the user says nothing specific — "surprise me", "build something cool", "show me what you got", or just "build a website":
+
+1. Read `seeds.md` — pick a random seed from the vault
+2. **Amplify it** — invent a brand name, tagline, 3 features, target audience
+3. Pick a style preset (or use gold-standard)
+4. Build the full page with real copy, real personality
+5. Run the anti-slop checklist before shipping
+
+Every build must be unique. Never reuse the same seed twice in a session.
+
 ## Workflow
 
 ```
-1. USER DESCRIBES WHAT THEY WANT (or "I don't know, make it look good")
+1. USER DESCRIBES WHAT THEY WANT
+   (or says nothing → use Surprise Me Mode above)
       │
 2. PICK A STYLE PRESET from styles/ directory
    - No preset chosen? Use gold-standard (the default)
       │
 3. GENERATE the base HTML + Tailwind CDN template
-   - Start with templates/gold-standard.html
+   - Start with templates/gold-standard.html as structural reference
    - Apply chosen style's colors, fonts, spacing
    - Write REAL copy — no lorem, no "Lorem ipsum"
+   - Every page needs: hero, content, CTA, footer minimum
       │
 4. RUN THE ANTI-SLOP CHECKLIST above
    - Every item clear? Ship it.
