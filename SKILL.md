@@ -13,12 +13,46 @@ Everything you build must feel like it was made by someone with taste — intent
 
 **If it looks like AI made it, delete it and start over.**
 
+## Icons: SVGL, Never Emoji
+
+**NEVER use emoji (🚀 ⚡ 🔥 etc.) in any UI.** Emoji is lazy, inconsistent across OS, and screams AI-generated.
+
+Use the **[SVGL API](https://api.svgl.app)** — free, no auth, 500+ brand/tech SVG icons:
+
+```
+# Search for an icon
+curl -s "https://api.svgl.app?search=react"
+
+# Get by category (software, ai, design, library, framework, etc.)
+curl -s "https://api.svgl.app/category/design"
+
+# Get raw SVG code
+curl -s "https://api.svgl.app/svg/react.svg"
+```
+
+**Usage in HTML:**
+```html
+<!-- Light/dark aware — pick the right variant -->
+<img src="https://svgl.app/library/react.svg" class="w-5 h-5" alt="React">
+
+<!-- Or inline the SVG for styling control -->
+<!-- Fetch from: https://api.svgl.app/svg/react.svg -->
+```
+
+**Rules:**
+- Always `fetch` from SVGL first to find the right icon. Don't guess URLs.
+- Some icons have `light`/`dark` variants — use them when building dark mode.
+- Some icons have `wordmark` variants — use for logo displays, not feature icons.
+- If SVGL doesn't have what you need, use a minimal hand-drawn SVG icon instead. Never emoji.
+- Categories: AI, Software, Library, Framework, Design, Devtool, Language, Payment, Social, Database, Hosting, Crypto, and more.
+
 ## Anti-Slop Checklist
 
 Before committing ANY UI, verify NONE of these exist:
 
 | Anti-Pattern | Why It Sucks | Fix |
 |---|---|---|
+| Emoji in UI (🚀 ⚡ 🔥) | Lazy, OS-inconsistent, instant AI flag | Use SVG icons from SVGL API |
 | `#3B82F6` as primary | Every AI uses Tailwind blue. Instant slop flag | Pick a real color with personality |
 | Uniform `p-4` or `p-6` everywhere | Looks like a spreadsheet, not a design | Vary spacing. Use `p-2`, `py-20`, `px-8` with intention |
 | Everything centered | Monotonous, no visual hierarchy | Asymmetric layouts. Left-align body text. Center only headlines when deliberate |
